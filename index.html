@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Overprime MatchMaker</title>
+        <meta name="description" content="ディスクリプションを入力">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+<body>
+
+    <!-- Main Start -->
+   <div id="main">
+        <!-- User & ELO List -->
+        <div>
+            <table border="1" align="center">
+                <tr>
+                    <th>No</th>
+                    <th>UserName</th>
+                    <th>ELO</th>
+                </tr>
+                <tr>
+                    <td class="no">1</td>
+                    <td class="user"><input id="username1" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo1" style="width:76px" value="0"></td>
+                </tr>
+                <tr>
+                    <td class="no">2</td>
+                    <td class="user"><input id="username2" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo2" style="width:76px" value="0"></td>
+                </tr>
+                <tr>
+                    <td class="no">3</td>
+                    <td class="user"><input id="username3" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo3" style="width:76px" value="0"></td>
+                </tr>
+                <tr>
+                    <td class="no">4</td>
+                    <td class="user"><input id="username4" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo4" style="width:76px" value="0"></td>
+                </tr>
+                <tr>
+                    <td class="no">5</td>
+                    <td class="user"><input id="username5" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo5" style="width:76px" value="0"></td>
+                </tr>
+                <tr>
+                    <td class="no">6</td>
+                    <td class="user"><input id="username6" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo6" style="width:76px" value="0"></td>
+                </tr>
+                <tr>
+                    <td class="no">7</td>
+                    <td class="user"><input id="username7" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo7" style="width:76px" value="0"></td>
+                </tr>
+                <tr>
+                    <td class="no">8</td>
+                    <td class="user"><input id="username8" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo8" style="width:76px" value="0"></td>
+                </tr>
+                <tr>
+                    <td class="no">9</td>
+                    <td class="user"><input id="username9" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo9" style="width:76px" value="0"></td>
+                </tr>
+                <tr>
+                    <td class="no">10</td>
+                    <td class="user"><input id="username10" style="width:176px"></td>
+                    <td class="elo"><input type=number id="userelo10" style="width:76px" value="0"></td>
+                </tr>
+            </table>
+        </div>
+        <!-- User & ELO List END -->
+
+        <!-- Get ELO Button -->
+        <div clss="buttonField" style="display:none">
+            <div class="buttonArea">
+                <p class="getelo">
+                    <a href="javascript:void(0)" onclick="getelo()">Get ELO</a>
+                </p>
+            </div>
+        </div>
+        <!-- Get ELO Button END -->
+
+        <!-- MatchMake Button -->
+        <div class="buttonField">
+            <div class="buttonArea">
+                <p class="make1">
+                    <a href="javascript:void(0)" onclick="randomMatch()">Random MatchMake</a>
+                </p>
+            </div>
+            <div class="buttonArea">
+                <p class="make1">
+                    <a href="javascript:void(0)" onclick="eloMatch()">ELO MatchMake(NotWork)</a>
+                </p>
+            </div>
+        </div>
+        <!-- MatchMake Button END -->
+
+        <!-- Output Area -->
+        <div class="outputArea">
+            <p><canvas id="preview"></canvas></p>
+            <textarea id="kekka" readonly></textarea>
+        </div>
+        
+        <!-- Output Area END -->
+
+    </div>
+    <!-- Main End-->
+
+<footer><center>Overprime MatchMaker</center></footer>
+
+</body>
+</html>
