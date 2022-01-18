@@ -109,7 +109,7 @@ const shuffle = ([...array]) => {
 
   
 function padd(val) {
-    var len = 4;        //
+    var len = 4;
     for(var i = 0; i < len; i++){
         val = val + " ";
     } 
