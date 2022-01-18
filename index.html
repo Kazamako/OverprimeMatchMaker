@@ -12,9 +12,13 @@
 
     <!-- Main Start -->
    <div id="main">
+        <!-- Headder -->
+        <p id="header">Overprime MatchMaker</p>
+
+
         <!-- User & ELO List -->
         <div>
-            <table border="1" align="center">
+            <table border="1" align="center" id="userList">
                 <tr>
                     <th>No</th>
                     <th>UserName</th>
@@ -22,53 +26,53 @@
                 </tr>
                 <tr>
                     <td class="no">1</td>
-                    <td class="user"><input id="username1" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo1" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username1" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo1" style="width:90px" value="0"></td>
                 </tr>
                 <tr>
                     <td class="no">2</td>
-                    <td class="user"><input id="username2" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo2" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username2" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo2" style="width:90px" value="0"></td>
                 </tr>
                 <tr>
                     <td class="no">3</td>
-                    <td class="user"><input id="username3" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo3" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username3" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo3" style="width:90px" value="0"></td>
                 </tr>
                 <tr>
                     <td class="no">4</td>
-                    <td class="user"><input id="username4" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo4" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username4" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo4" style="width:90px" value="0"></td>
                 </tr>
                 <tr>
                     <td class="no">5</td>
-                    <td class="user"><input id="username5" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo5" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username5" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo5" style="width:90px" value="0"></td>
                 </tr>
                 <tr>
                     <td class="no">6</td>
-                    <td class="user"><input id="username6" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo6" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username6" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo6" style="width:90px" value="0"></td>
                 </tr>
                 <tr>
                     <td class="no">7</td>
-                    <td class="user"><input id="username7" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo7" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username7" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo7" style="width:90px" value="0"></td>
                 </tr>
                 <tr>
                     <td class="no">8</td>
-                    <td class="user"><input id="username8" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo8" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username8" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo8" style="width:90px" value="0"></td>
                 </tr>
                 <tr>
                     <td class="no">9</td>
-                    <td class="user"><input id="username9" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo9" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username9" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo9" style="width:90px" value="0"></td>
                 </tr>
                 <tr>
                     <td class="no">10</td>
-                    <td class="user"><input id="username10" style="width:176px"></td>
-                    <td class="elo"><input type=number id="userelo10" style="width:76px" value="0"></td>
+                    <td class="user"><input id="username10" style="width:290px"></td>
+                    <td class="elo"><input type=number id="userelo10" style="width:90px" value="0"></td>
                 </tr>
             </table>
         </div>
@@ -93,7 +97,7 @@
             </div>
             <div class="buttonArea">
                 <p class="make1">
-                    <a href="javascript:void(0)" onclick="eloMatch()">ELO MatchMake(NotWork)</a>
+                    <a href="javascript:void(0)" onclick="eloMatch()">(停止中)ELO MatchMake</a>
                 </p>
             </div>
         </div>
@@ -102,15 +106,17 @@
         <!-- Output Area -->
         <div class="outputArea">
             <p><canvas id="preview"></canvas></p>
-            <textarea id="kekka" readonly></textarea>
+            <p>▲　コピーして使用してください　▲</p>
+            <textarea id="kekka" readonly style="display:none"></textarea>
         </div>
         
         <!-- Output Area END -->
-
+        
+        <div Style="height:50px"></div>
     </div>
     <!-- Main End-->
 
-<footer><center>Overprime MatchMaker</center></footer>
+<footer><center>Overprime MatchMaker / Kazamako</center></footer>
 
 </body>
 </html>

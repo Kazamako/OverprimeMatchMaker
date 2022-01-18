@@ -1,28 +1,39 @@
+body {
+  background-color: rgba(33,33,33);
+  color: white
+}
+
 #main {
-    margin: auto;
-    width: 600px;
+  margin: auto;
+  width: 600px;
+}
+
+#header {
+  text-align: center;
+  font-size: large;
+  text-decoration: underline;
 }
 
 .buttonField {
-display: flex;
+  display: flex;
 }
 
 .buttonArea {
   width: 210px;
   margin:  0 auto;
-  }
+}
   
 .no {
   text-align: center;
 }
 
 .user {
-  width: 190px;
+  width: 300px;
   text-align: center;
 }
 
 .elo {
-  width: 80px;
+  width: 100px;
   text-align: center;
 }
 
@@ -31,14 +42,14 @@ display: flex;
 }
 
 #kekka {
-    width: 400px;
-    height: 330px;
+  width: 400px;
+  height: 330px;
 }
 
 #preview {
-    background-color: gray;
-    width:500px;
-    height:200px;
+  background-color: gray;
+  width:500px;
+  height:200px;
 }
 
 .make1 a{
@@ -129,6 +140,24 @@ display: flex;
   border-top: solid 2px #FFAF42;
   border-right: solid 2px #FFAF42;
 }
+
+#userList {
+  width: 500px;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-color : #333333;
+ }
+ #userList th {
+  padding: 5px;
+  border-bottom: solid 4px #778ca3;
+  color: #778ca3
+ }
+ #userList td {
+  padding: 5px;
+  border-bottom: solid 1px #778ca3;
+  color: white;
+ }
 
 
 button, input, select, textarea, pre, th, td, li, dt, dd {
