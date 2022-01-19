@@ -156,8 +156,34 @@ body {
  #userList td {
   padding: 5px;
   border-bottom: solid 1px #778ca3;
-  color: white;
+  color: #778ca3;
  }
+
+ .acd-check{
+  display: none;
+}
+.acd-label{
+  background: #333;
+  color: #fff;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px;
+}
+.acd-content{
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+  visibility: hidden;
+  font-size: small;
+}
+.acd-check:checked + .acd-label + .acd-content{
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
 
 
 button, input, select, textarea, pre, th, td, li, dt, dd {

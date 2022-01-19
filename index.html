@@ -14,9 +14,9 @@
    <div id="main">
         <!-- Headder -->
         <p id="header">Overprime MatchMaker</p>
+        <!-- Headder END -->
 
-
-        <!-- User & ELO List -->
+        <!-- UserName & ELO List -->
         <div>
             <table border="1" align="center" id="userList">
                 <tr>
@@ -79,6 +79,7 @@
         <!-- User & ELO List END -->
 
         <!-- Get ELO Button -->
+        <!-- display:none-->
         <div clss="buttonField" style="display:none">
             <div class="buttonArea">
                 <p class="getelo">
@@ -97,7 +98,7 @@
             </div>
             <div class="buttonArea">
                 <p class="make1">
-                    <a href="javascript:void(0)" onclick="eloMatch()">(停止中)ELO MatchMake</a>
+                    <a href="javascript:void(0)" onclick="eloMatch()">ELO MatchMake</a>
                 </p>
             </div>
         </div>
@@ -107,16 +108,32 @@
         <div class="outputArea">
             <p><canvas id="preview"></canvas></p>
             <p>▲　コピーして使用してください　▲</p>
+
+            <!-- Textarea display:none -->
             <textarea id="kekka" readonly style="display:none"></textarea>
         </div>
-        
         <!-- Output Area END -->
         
-        <div Style="height:50px"></div>
+        <input id="acd-check1" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check1">▼　このツールについて</label>
+        <div class="acd-content">
+            <p>Overprime 交流戦用のチーム分けツールです。</p>
+            <p>チーム分け後は、画像をコピーしてDiscordに貼り付けるなどして使ってください。</p>
+            <hr>
+            <p>【Random MatchMake】は、完全ランダムにチーム分けされます。</p>
+            <p>レート無関係でチーム分けされますので、バランスが悪くなるかもしれません。</p>
+            <p>【ELO MatchMake】は、ある程度レートを考慮したチーム分けになります。</p>
+            <p>このボタンでは、入力されたELOに対して±5%の差が出ます。</p>
+            <p>表示されている数字が異なっていても仕様なので気にしないで下さい。</p>
+            <p>※レートの取得先が見つかったら本領発揮です。</p>
+        </div>
+
+        <div Style="height:30px"></div>
+
     </div>
     <!-- Main End-->
 
-<footer><center>Overprime MatchMaker / Kazamako</center></footer>
+<footer><center>Overprime MatchMaker / Kazamako <a href="https://github.com/Kazamako/OverprimeMatchMaker">(SourceCode)</a></center></footer>
 
 </body>
 </html>
