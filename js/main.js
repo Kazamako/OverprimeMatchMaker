@@ -2,7 +2,7 @@ const bgImg = new Image();
 
 window.onload = function(){
   // チーム分け背景画像
-  bgImg.src = "background.jpg";
+  bgImg.src = "image/background.jpg";
   // Canvas準備
   var canvas = document.getElementById("preview");
   var ctx = canvas.getContext('2d');
@@ -231,3 +231,20 @@ function padd(val) {
     } 
     return val.substr(0,len);
 }
+
+
+$(function(){
+  $("#gelo").on("click", function(event){
+    let id = $("#userelo1").val();
+    $.ajax({
+      type: "POST",
+      url: "https://reshtml.herokuapp.com/",
+      data: { "id" : id },
+      dataType : "json"
+    }).done(function(data){
+      alert(data)
+    }).fail(function(XMLHttpRequest, status, e){
+      alert(e);
+    });
+  });
+});
